@@ -624,6 +624,8 @@ static int is_valid_frequency(int mhz)
         return 1;
     if (mhz >= 400 && mhz <= 480)
         return 1;
+    if (mhz == 0)
+        return 1;
     return 0;
 }
 
